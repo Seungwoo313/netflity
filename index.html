@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="ko">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Netflity</title>
-    <meta name="description" content="둘이 같이 보는 넷플릭스" />
+    <meta name="description" content="Netflix for two" />
     <link rel="icon" href="icon.png" />
     <link
       rel="stylesheet"
@@ -20,57 +20,55 @@
       </header>
 
       <section class="intro">
-        <h1>둘이 같이 보는 넷플릭스</h1>
-        <p>각자 자기 넷플릭스로 재생. 재생, 정지, 이동은 자동으로 맞춤. 채팅과 리액션은 화면 오른쪽 사이드바.</p>
+        <h1>Netflix for two</h1>
+        <p>Each of you plays Netflix on your own account. Play, pause and seeking stay in step, and chat and reactions live in a sidebar on the right.</p>
         <div class="actions">
-          <a class="button primary" href="mock.html?as=a">가짜 넷플릭스로 체험</a>
-          <a class="button" href="#install">설치</a>
+          <a class="button primary" href="mock.html?as=a">Try the test player</a>
+          <a class="button" href="#install">Install</a>
         </div>
-        <p class="hint">체험: 탭 두 개(A, B)를 열고 같은 방 코드로 입장</p>
+        <p class="hint">To try it: open two tabs (A and B) and join the same room code.</p>
       </section>
 
       <section>
-        <h2>기능</h2>
+        <h2>What it does</h2>
         <dl class="features">
-          <div><dt>동기화</dt><dd>재생, 정지, 이동이 1초 안에 반영. 어긋나면 자동 보정.</dd></div>
-          <div><dt>버퍼링 대기</dt><dd>한쪽이 버퍼링되면 같이 멈췄다가 같이 재생.</dd></div>
-          <div><dt>사이드바</dt><dd>채팅과 설정. 열면 영상이 옆으로 줄어들고, 접으면 작은 독만 남음.</dd></div>
-          <div><dt>리액션</dt><dd>이모지가 화면 위로 떠오름. 연타하면 콤보. 숫자키 1–8.</dd></div>
-          <div><dt>일시정지 이유</dt><dd>간식, 화장실, 전화, 휴식, 잠깐. 상대 화면에 표시.</dd></div>
-          <div><dt>카운트다운</dt><dd>3초 뒤 두 화면이 동시에 재생.</dd></div>
+          <div><dt>Sync</dt><dd>Play, pause and seeking reach the other side within a second. Drift is corrected on its own.</dd></div>
+          <div><dt>Buffering</dt><dd>If one side buffers, both wait and start again together.</dd></div>
+          <div><dt>Sidebar</dt><dd>Chat and settings. Opening it narrows the video; collapsing it leaves a small dock that hides when you're not using it.</dd></div>
+          <div><dt>Reactions</dt><dd>Emoji float up over the video. Tap fast for a combo. Keys 1–8.</dd></div>
+          <div><dt>Countdown</dt><dd>Both screens start playing at the same moment after 3, 2, 1.</dd></div>
         </dl>
       </section>
 
       <section id="install">
-        <h2>설치</h2>
+        <h2>Install</h2>
         <div class="install">
           <div>
-            <h3>맥 · 사파리</h3>
+            <h3>Android tablet · Firefox</h3>
             <ol>
-              <li><code>npm run build:safari</code></li>
-              <li><code>Netflity.app</code> 실행 후 사파리 설정 → 확장 프로그램에서 Netflity 켜기</li>
-              <li>넷플릭스에서 작품을 열면 오른쪽에 독 표시</li>
+              <li>Sign in to Netflix in Firefox and turn on Desktop site in the menu.</li>
+              <li>Settings → About Firefox → tap the logo 5 times → back to Settings → Install extension from file → pick <code>Netflity.xpi</code>.</li>
+              <li>Open a title and join with the room code you were sent.</li>
             </ol>
           </div>
           <div>
-            <h3>갤럭시 탭 · Firefox</h3>
+            <h3>Mac · Safari</h3>
             <ol>
-              <li>Firefox에서 넷플릭스 로그인, 메뉴에서 데스크톱 사이트 켜기</li>
-              <li>설정 → Firefox 정보 → 로고 5번 탭 → 파일에서 확장 설치 → <code>netflity.xpi</code></li>
-              <li>작품을 열고 받은 방 코드로 입장</li>
+              <li>Run <code>Netflity.app</code> once, then turn on Netflity in Safari Settings → Extensions.</li>
+              <li>Open a title on Netflix; the dock appears on the right.</li>
             </ol>
           </div>
           <div>
-            <h3>맥 · 크롬 (개발용)</h3>
+            <h3>Mac · Chrome</h3>
             <ol>
-              <li><code>chrome://extensions</code> → 개발자 모드</li>
-              <li>압축해제된 확장 프로그램 로드 → <code>extension/dist/chrome</code></li>
+              <li><code>chrome://extensions</code> → Developer mode.</li>
+              <li>Load unpacked → <code>extension/dist/chrome</code>.</li>
             </ol>
           </div>
         </div>
       </section>
 
-      <footer>개인용 프로젝트. 넷플릭스와 관계없음.</footer>
+      <footer>A personal project. Not affiliated with Netflix.</footer>
     </main>
   </body>
 </html>
