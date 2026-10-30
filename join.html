@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Join on Netflity</title>
+    <meta name="description" content="You're invited to watch Netflix together" />
+    <link rel="icon" href="icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"
+    />
+    <script type="module" crossorigin src="./assets/join-iEtyDVbU.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/modulepreload-polyfill-P2Xu9kJm.js">
+    <link rel="stylesheet" crossorigin href="./assets/join-DpU8jZ5M.css">
+    <link rel="stylesheet" crossorigin href="./assets/landing-VMCtCbts.css">
+  </head>
+  <body>
+    <main class="wrap join">
+      <header class="brand">
+        <img src="icon.png" alt="" width="28" height="28" />
+        <span>Netflity</span>
+      </header>
+
+      <section class="invite">
+        <h1>You're invited to watch Netflix together</h1>
+        <p class="room" id="room-line" hidden>Room <b id="room"></b></p>
+      </section>
+
+      <p class="notice" id="not-firefox" hidden>
+        Open this page in <b>Firefox</b> on your tablet. Netflity runs in Firefox for Android.
+        <a href="https://play.google.com/store/apps/details?id=org.mozilla.firefox" rel="noopener">Get Firefox</a>
+      </p>
+
+      <ol class="steps">
+        <li class="step" id="step-install">
+          <h2>Add Netflity to Firefox</h2>
+          <p class="done-line" id="installed" hidden>Netflity is installed.</p>
+          <div id="install-actions">
+            <a class="button primary big" id="install" href="netflity.xpi">Add to Firefox</a>
+            <details class="help">
+              <summary>It only downloaded a file?</summary>
+              <ol>
+                <li>In Firefox, open <b>Settings → About Firefox</b> and tap the Firefox logo 5 times.</li>
+                <li>Go back to <b>Settings</b> and tap <b>Install extension from file</b>.</li>
+                <li>Pick <b>netflity.xpi</b> from Downloads, then tap <b>Add</b>.</li>
+              </ol>
+            </details>
+          </div>
+        </li>
+
+        <li class="step">
+          <h2>Open Netflix</h2>
+          <a class="button primary big" id="open" href="https://www.netflix.com/browse">Open Netflix</a>
+          <p class="hint">Sign in if Netflix asks. If Firefox offers to open the Netflix app, stay in Firefox.</p>
+        </li>
+
+        <li class="step">
+          <h2>Join the room</h2>
+          <p class="hint" id="join-hint">
+            Netflity opens on the right side of Netflix with the room code already filled in. Type your name and
+            tap <b>Join</b>.
+          </p>
+        </li>
+      </ol>
+
+      <footer>A personal project. Not affiliated with Netflix.</footer>
+    </main>
+  </body>
+</html>

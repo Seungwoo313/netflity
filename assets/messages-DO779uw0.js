@@ -1,0 +1,1 @@
+var e=`netflity:bridge`,t=`netflity:host`,n=[`1`,`2`,`3`,`4`,`5`,`6`,`7`,`8`];function r(e,t){return typeof e==`object`&&!!e&&e.ns===t}export{r as i,n,t as r,e as t};
